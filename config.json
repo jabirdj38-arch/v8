@@ -5,54 +5,41 @@
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36",
     "intervalGetNewCookie": 1440,
     "notes": "Automatically retrieves new cookies every x minutes. Recommended: 1440 (1 day)."
   },
   "antiInbox": false,
   "language": "en",
   "notesLanguage": "change language using ISO 639-1 code",
-  "nickNameBot": "𝙃𝙞𝙣𝙖𝙏'𝙖 𝙐𝙯𝙪𝙢𝙖𝙆'𝙞𝙞 ᯓᡣ𐭩",
-  "prefix": "/",
-  "enableTypingIndicator": true,
-  "notesTypingIndicator": "true = show 'is typing...' for the humanizer delay before replying | false = reply instantly, no typing shown",
-  "humanizer": {
-    "enable": true,
-    "delayMs": 1000,
-    "cooldownMs": 5500,
-    "perCommand": true,
-    "maxPerMinute": 20,
-    "notes": "delayMs = how long the bot waits (and shows typing) before replying to a command. cooldownMs = min gap before the SAME command can run again in a thread. perCommand = true keys that cooldown per command, so different commands (/pp then /uid) all run back-to-back while the same command repeated is dropped; false reverts to a single per-thread cooldown that drops every command in the window. maxPerMinute = global accepted-command cap. Set enable=false to reply instantly with no delay."
-  },
+  "nickNameBot": " Sumaya💌",
+  "prefix": "m",
   "noPrefix": {
     "enable": true,
     "notes": "true = only bot admins can use commands without prefix | false = everyone must use prefix"
-  },
-  "e2ee": {
-    "enable": false,
-    "notes": "true = connect E2EE messaging layer on startup | false = skip E2EE entirely, MQTT only"
   },
   "adminOnly": {
     "enable": false,
     "ignoreCommand": []
   },
   "adminBot": [
-    "61592832917083"
+   "61593067372418",
+   "61582526824265"
   ],
   "reactUnsend": {
     "enable": true,
     "onlyAdmin": true,
     "emojis": [
       "😡",
-      "🤬"
+      "😾"
     ],
     "notes": "If enable = true, bot will unsend any message reacted with these emojis. If onlyAdmin = true, only adminBot IDs can trigger it."
   },
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "",
-      ""
+      "61593067372418",
+      "61595057655924"
     ],
     "notes": "If enabled, only IDs in whiteListIds can use the bot."
   },
@@ -62,7 +49,7 @@
     "notes": "If enabled, only threads in whiteListThreadIds can use the bot."
   },
   "database": {
-    "type": "sqlite",
+    "type": "mongodb",
     "uriMongodb": "mongodb+srv://eryxenxdb:eryxenxdbgoatv2@cluster0.523a3n0.mongodb.net/?appName=Cluster0",
     "autoSyncWhenStart": false,
     "autoRefreshThreadInfoFirstTime": true,
@@ -85,7 +72,7 @@
   "dashBoard": {
     "enable": true,
     "expireVerifyCode": 300000,
-    "port": 12001
+    "port": 3001
   },
   "serverUptime": {
     "enable": false,
@@ -105,13 +92,6 @@
     "timeInterval": 180,
     "url": "",
     "notes": "Time in seconds. Recommended for uptime monitors."
-  },
-  "keepAlive": {
-    "enable": true,
-    "interval": 10,
-    "url": "",
-    "path": "/health",
-    "notes": "Prevents free hosts (Render) from spinning the service down by pinging its own public URL. interval is in minutes (keep below 15). Leave url empty to auto-detect RENDER_EXTERNAL_URL / RENDER_EXTERNAL_HOSTNAME; on a VPS set url to your public address or leave it empty to disable."
   },
   "autoLoadScripts": {
     "enable": false,
@@ -177,4 +157,4 @@
     "autoReconnect": true,
     "notes": "Docs: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions"
   }
-}
+    }
